@@ -1,0 +1,26 @@
+li {
+  padding: 5px;
+  margin: 5px;
+  background: yellowgreen;
+}
+
+.label {
+  font-weight: bold;
+}
+
+.create-update-form {
+  padding: 5px;
+  margin: 5px;
+  background: purple;
+}
+
+.form-group {
+  margin-bottom: 5px;
+}
+body {
+    background-color: orange;
+}
+p {
+    font-family: verdana;
+    font-size: 20px;
+}

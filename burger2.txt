@@ -1,0 +1,34 @@
+if (typeof str === "number") {
+    return String(str);
+  }
+  return str.replace(/[aeiou]/gi, "");
+};
+
+/ <div class="col-6 col-md-4 text-center">
+    {{#each burgers}}
+     {{#if this.devoured}}
+    <div class="eatenburger">
+      <div>
+        {{this.burger_name}}
+      </div>
+    </div>
+    {{/if}} 
+    {{/each}}
+  </div>
+
+<h2>Add a Burger</h2>
+<div class="row">
+  <form class="create-form">
+
+  <div class="form-group">
+    <label for="burg">Burger</label>
+    <input type="text" id="burg" name="burger_name">
+  </div>
+  <div class="col-12 col md-12">
+    <form action="/burgers" method="POST">
+      <input type="hidden" name="burger_name" type="text" value{{this.id}}>
+      <br>
+      <button type="submit" class="addBurger">Add a burger</button>
+    </form>
+  </div>
+</div>
